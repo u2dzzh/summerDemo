@@ -261,7 +261,7 @@ def predict(parameters, X):
     return predictions
 
 if __name__ == '__main__':
-    # Get Dataset
+    # Get Dataset a
     X, Y = load_planar_dataset()
     # Visualize the data:
     plt.scatter(X[0, :], X[1, :], c=Y[0, :], s=40, cmap=plt.cm.Spectral)
