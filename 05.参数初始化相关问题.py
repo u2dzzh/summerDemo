@@ -19,7 +19,7 @@ def load_dataset():
 
 
 """
-    Use a 3-layer neural network to see the differences of different methods of Initialization
+    Use a 3-layer neural network to see the differences of different methods of Initialization 
 """
 
 
