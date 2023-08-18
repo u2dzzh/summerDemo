@@ -279,7 +279,7 @@ def model(X, Y, layers_dims, optimizer, learning_rate=0.0007, mini_batch_size=64
     # Optimization loop
     for i in range(num_epochs):
 
-        # Define the random minibatches. We increment the seed to reshuffle differently the dataset after each epoch
+        # Define the random minibatches. We increment the seed to reshuffle differently the data after each epoch
         seed = seed + 1
         minibatches = random_mini_batches(X, Y, mini_batch_size, seed)
 

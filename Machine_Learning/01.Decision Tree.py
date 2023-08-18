@@ -9,7 +9,7 @@ Since not all mushrooms are edible, you'd like to be able to tell whether a give
 You have some existing data that you can use for this task.
 Can you use the data to help you identify which mushrooms can be sold safely?
 
-Note: The dataset used is for illustrative purposes only. It is not meant to be a guide on identifying edible mushrooms.
+Note: The data used is for illustrative purposes only. It is not meant to be a guide on identifying edible mushrooms.
 """
 
 
@@ -88,7 +88,7 @@ def compute_information_gain(X, y, node_indices, feature):
         cost (float):        Cost computed
 
     """
-    # Split dataset
+    # Split data
     left_indices, right_indices = split_dataset(X, node_indices, feature)
 
     # Some useful variables
@@ -146,7 +146,7 @@ def get_best_split(X, y, node_indices):
 # Build the Tree
 def build_tree_recursive(X, y, node_indices, branch_name, max_depth, current_depth):
     """
-    Build a tree using the recursive algorithm that split the dataset into 2 subgroups at each node.
+    Build a tree using the recursive algorithm that split the data into 2 subgroups at each node.
     This function just prints the tree.
 
     Args:
@@ -173,7 +173,7 @@ def build_tree_recursive(X, y, node_indices, branch_name, max_depth, current_dep
     formatting = "-"*current_depth
     print("%s Depth %d, %s: Split on feature: %d" % (formatting, current_depth, branch_name, best_feature))
 
-    # Split the dataset at the best feature
+    # Split the data at the best feature
     left_indices, right_indices = split_dataset(X, node_indices, best_feature)
 
     # continue splitting the left and the right child. Increment current depth

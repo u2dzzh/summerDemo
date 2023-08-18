@@ -103,7 +103,7 @@ def forward_propagation(X, parameters):
     Implements the forward propagation (and computes the loss) presented in Figure 2.
     
     Arguments:
-    X -- input dataset, of shape (input size, number of examples)
+    X -- input data, of shape (input size, number of examples)
     parameters -- python dictionary containing your parameters "W1", "b1", "W2", "b2", "W3", "b3":
                     W1 -- weight matrix of shape ()
                     b1 -- bias vector of shape ()
@@ -141,7 +141,7 @@ def backward_propagation(X, Y, cache):
     Implement the backward propagation presented in figure 2.
     
     Arguments:
-    X -- input dataset, of shape (input size, number of examples)
+    X -- input data, of shape (input size, number of examples)
     Y -- true "label" vector (containing 0 if cat, 1 if non-cat)
     cache -- cache output from forward_propagation()
     
@@ -180,7 +180,7 @@ def predict(X, y, parameters):
     parameters -- parameters of the trained model
     
     Returns:
-    p -- predictions for the given dataset X
+    p -- predictions for the given data X
     """
     
     m = X.shape[1]

@@ -45,7 +45,7 @@ def read_data(filename):
 
 
 def build_dataset(words, n_words):
-    """Process raw inputs into a dataset."""
+    """Process raw inputs into a data."""
     count = [['UNK', -1]]
     count.extend(collections.Counter(words).most_common(n_words - 1))
     dictionary = dict()

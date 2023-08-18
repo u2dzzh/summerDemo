@@ -10,7 +10,7 @@ np.random.seed(1)
 # GRADED FUNCTION: zero_pad
 def zero_pad(X, pad):
     """
-    Pad with zeros all images of the dataset X. The padding is applied to the height and width of an image,
+    Pad with zeros all images of the data X. The padding is applied to the height and width of an image,
     as illustrated in Figure 1.
 
     Argument:

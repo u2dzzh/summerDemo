@@ -115,7 +115,7 @@ def backward_propagation_with_regularization(X, Y, cache, lambd):
     Implements the backward propagation of our baseline model to which we added an L2 regularization.
 
     Arguments:
-    X -- input dataset, of shape (input size, number of examples)
+    X -- input data, of shape (input size, number of examples)
     Y -- "true" labels vector, of shape (output size, number of examples)
     cache -- cache output from forward_propagation()
     lambd -- regularization hyperparameter, scalar
@@ -152,7 +152,7 @@ def forward_propagation_with_dropout(X, parameters, keep_prob=0.5):
     Implements the forward propagation: LINEAR -> RELU + DROPOUT -> LINEAR -> RELU + DROPOUT -> LINEAR -> SIGMOID.
 
     Arguments:
-    X -- input dataset, of shape (2, number of examples)
+    X -- input data, of shape (2, number of examples)
     parameters -- python dictionary containing your parameters "W1", "b1", "W2", "b2", "W3", "b3":
                     W1 -- weight matrix of shape (20, 2)
                     b1 -- bias vector of shape (20, 1)
@@ -214,7 +214,7 @@ def backward_propagation_with_dropout(X, Y, cache, keep_prob):
     Implements the backward propagation of our baseline model to which we added dropout.
 
     Arguments:
-    X -- input dataset, of shape (2, number of examples)
+    X -- input data, of shape (2, number of examples)
     Y -- "true" labels vector, of shape (output size, number of examples)
     cache -- cache output from forward_propagation_with_dropout()
     keep_prob - probability of keeping a neuron active during drop-out, scalar

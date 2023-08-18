@@ -16,7 +16,7 @@ Define the neural net work structure
 def layer_sizes(X, Y):
     """
     Arguments:
-    X -- input dataset of shape (input size, number of examples)
+    X -- input data of shape (input size, number of examples)
     Y -- labels of shape (output size, number of examples)
 
     Returns:
@@ -203,7 +203,7 @@ def update_parameters(parameters, grads, learning_rate = 1.2):
 def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
     """
     Arguments:
-    X -- dataset of shape (2, number of examples)
+    X -- data of shape (2, number of examples)
     Y -- labels of shape (1, number of examples)
     n_h -- size of the hidden layer
     num_iterations -- Number of iterations in gradient descent loop
